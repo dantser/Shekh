@@ -1,0 +1,55 @@
+.skills {
+	background-color: #fff;
+	.col {
+		margin-right: 26px;
+	}
+	.wrapper {
+		padding-bottom: 58px;
+	}
+}
+
+.skills__item {
+	width: 445px;
+	text-transform: uppercase;
+	margin-bottom: 43px;
+	line-height: 27px;
+	
+}
+.skills__item--prog {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.skills__item--persent {
+	display: inline-block;
+	float: right;
+}
+.skills__item--progress-bar {
+	display: block;
+	width: 445px;
+	height: 5px;
+	background-color: #b0c6ff;
+	position: relative;
+	margin-bottom: 10px;
+	
+	&::after {
+		content: "";
+		position: absolute;
+		width: 405px;
+		height: 5px;
+		background-color: #3971ff;
+		left: 0;
+		bottom: 0;
+	}
+	
+	 &::before {
+		content: "";
+		position: absolute;
+		height: 5px;
+		width: 9px;
+		z-index: 1;
+		 background-color: #b0c6ff;
+		transform: skewX(-40deg);
+		left: 401px;
+		bottom: 0;
+	} 
+}

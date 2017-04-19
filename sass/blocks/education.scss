@@ -1,0 +1,43 @@
+.edu {
+	background-color: $bg-grey;
+	.wrapper {
+		padding-bottom: 8px;
+	}
+}
+.cell__number {
+	position: absolute;
+	top: 3px;
+	left: -2px;
+	font-size: 30px;
+	line-height: 30px;
+	&:hover {
+		color: $marker-clr;
+	}
+}
+.cell__header {
+	display: inline-block;
+	padding-left: 61px;
+	text-transform: uppercase;
+	margin-bottom: 33px;
+	letter-spacing: 0.3px;
+}
+.cell__header--name {
+	margin: 0;
+	margin-bottom: 9px;
+	font-weight: 400;
+	&:hover {
+		color: $marker-clr;
+	}
+}
+.cell__header--descr {
+	span {
+		display: block;
+		line-height: 30px;
+		letter-spacing: 0.2px;
+	}
+}
+.cell__text {
+	margin: 0;
+	line-height: 30px;
+	letter-spacing: 0.1px;
+}

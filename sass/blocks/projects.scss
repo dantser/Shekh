@@ -1,0 +1,58 @@
+.projects {
+	background-color: $bg-grey;
+	h2 {
+		margin: -1px 0 110px 1px;
+	}
+	.wrapper {
+		padding-left: 95px;
+		padding-bottom: 10px;
+	}
+	.cell {
+		position: relative;
+		background: url("../img/portfolio-image.png") no-repeat left top;
+		width: 440px;
+		margin-right: 30px;
+		margin-bottom: 85px;
+		.cell__header--name {
+			padding-top: 358px;
+			padding-left: 1px;
+			letter-spacing: 0.2px;
+			margin-bottom: 11px;
+		}
+		.cell-text {
+			padding-left: 1px;
+			line-height: 30px;
+		}
+	}
+	.row {
+		margin-left: 0px;
+	}
+}
+.projects .cell:hover{
+	background: none;
+	
+	&::after {
+		content: "+";
+		position: absolute;
+		font-family: "Exo 2", Arial, sans-serif;
+		font-size: 142px;
+		font-weight: 100;
+		text-transform: uppercase;
+		color: $marker-clr;
+		width: 60px;
+		height: 56px;
+		top: 65px;
+		left: 184px;
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		background-color: #f3f3f3;
+		box-shadow: 0 2px;
+		top:5px;
+		width: 445px;
+		height: 300px;
+		box-shadow: 0 10px 10px #cacaca;
+	}
+}
+

@@ -1,0 +1,16 @@
+.col {
+	display: inline-block;
+}
+
+.cell {
+	width: 437px;
+	display: inline-block;
+	margin-bottom: 87px;
+	margin-right: 33px;
+	position: relative;
+}
+.cell__header--name {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: 400;
+}

@@ -1,0 +1,154 @@
+.main-footer {
+	background-color: $bg-grey;
+	h2 {
+		margin-bottom: 140px;
+	}
+	.contacts {
+		padding-right: 127px;
+		.cell-text {
+			line-height: 30px;
+		}
+	}
+	.location {
+		margin-bottom: 112px;
+		.cell__header--name {
+			position: relative;
+			padding-left: 76px;
+			margin-bottom: 13px;
+			
+			&::after {
+				position: absolute;
+				content: "";
+				background-image: url("../img/location.png");
+				top: -15px;
+				left: 3px;
+				width: 40px;
+				height: 40px;
+			}
+		}
+		.cell-text {
+			width: 254px;
+			
+		}
+	}
+	.contact {
+		margin-bottom: 88px;
+		.cell__header--name {
+			position: relative;
+			padding-left: 74px;
+			margin-bottom: 12px;
+			&::after {
+				position: absolute;
+				content: "";
+				background-image: url("../img/contact.png");
+				top: -21px;
+				left: 3px;
+				width: 40px;
+				height: 46px;
+			}
+		}
+	}
+	.btn {
+		text-transform: capitalize;
+		outline: none;
+		border: none;
+		padding: 0;
+		background-color: inherit;
+		font-size: inherit;
+		align-self: flex-start;
+		margin-left: -5px;
+		letter-spacing: -0.1px;
+		&::after {
+			left: 3px;
+		}
+	}
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 540px;
+		margin-top: -20px;
+		input {
+			outline: none;
+			border: none;
+			padding: 0;
+			background-color: inherit;
+			height: 21px;
+			width: 100%;
+			font-family: inherit;
+			font-size: 14px;
+			border-bottom: 1px solid #a7a7a7;
+			margin-bottom: 38px;
+			&:focus {
+				border-bottom: 1px solid #3971ff;;
+			}
+			&[type=email] {
+				margin-bottom: 45px;
+			}
+			&#interested {
+				margin-bottom: 46px;
+				
+			}
+		}
+		.fa-angle-down {
+			position: absolute;
+			top: 0;
+			right: 31px;
+			font-size: 20px;
+			color: $marker-clr;
+		}
+		
+		label {
+			color: #a7a7a7; 
+			position: relative;
+			&:hover {
+				color: #4c4c4c; 
+			}
+		}
+		textarea {
+			display: block;
+			outline: none;
+			font-size: 14px;
+			font-family: inherit;
+			background-color: inherit;
+			border: none;
+			border-bottom: 1px solid #a7a7a7;
+			resize: none;
+			width: 100%;
+			margin-bottom: 41px;
+			&:focus {
+				border-bottom: 1px solid #3971ff;;
+			}
+		}
+	}
+}
+
+#msg {
+	height: 98px;
+}
+
+
+.social {
+	margin-left: -2px;
+	a {
+		font-size: 30px;
+		color: #4c4c4c;
+		margin-right: 39px;
+		display: inline-block;
+		vertical-align: middle;
+		&:hover {
+			color: $marker-clr;
+		}
+		&:nth-child(2) {
+			margin-right: 35px;
+		}
+		&:nth-child(3) {
+			margin-right: 32px;
+			vertical-align: top;
+		}
+	}
+}
+.main-footer__wrap {
+	display: flex;
+	
+	
+}
